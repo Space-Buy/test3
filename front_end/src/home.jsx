@@ -1,9 +1,8 @@
-import React from "react";
-
-function Home(){
+function Home(props){
     return(
         <div>
-            <a href="/list"><h2>Data List</h2></a>
+            <a href="/list"><h2>List of Items</h2></a>
+            <a href="/create"><h2>Create Items</h2></a>
         </div>
     )
 }

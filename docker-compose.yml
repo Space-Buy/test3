@@ -1,10 +1,19 @@
 version: '3.4'
 
-services:
-  fastapiusers:
-    image: fastapiusers
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    ports:
-      - 8000:8000
+services:  
+    be:
+      image: be
+      ports:
+        - 8000:80
+    mongo:
+      image: mongo:3.6.19-xenial
+      ports:
+        - "27017"
+      restart: always
+      volumes:
+        - ./data:/data/db
+
+    react:
+      image: fe
+      ports:
+        - 3000:3000
