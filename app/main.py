@@ -6,7 +6,7 @@ from files.crud_fun import add_item, remove_item, retrive_item,retrive_items, up
 app= FastAPI()
 
 from mongoengine import connect
-connect(db="project",host="mongo",port=27017)
+connect(db="project",host="localhost",port=27017)
 
 origins=["http://localhost:3000"]
 
