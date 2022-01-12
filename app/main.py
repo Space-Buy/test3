@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi import APIRouter, HTTPException
 from starlette.requests import Request
-from .files.models import Item_PY
-from .files.crud_fun import add_item, remove_item, retrive_item,retrive_items, update_item
+from files.models import Item_PY
+from files.crud_fun import add_item, remove_item, retrive_item,retrive_items, update_item
 app= FastAPI()
 
 from mongoengine import connect
