@@ -17,7 +17,7 @@ function Update(){
     },[]);
     
     console.warn("IM HER")
-    const getFetch =() => fetch(`http://127.0.0.1:8000/get_item/${params.id}`, {
+    const getFetch =() => fetch(`http://3.110.83.156:8000/get_item/${params.id}`, {
         method:"GET",
         headers: {
             'accept': 'application/json'
@@ -36,7 +36,7 @@ function Update(){
     function updateItem(){
         let item= {"price": putPrice,"tax": putTax,"tags": putTags,"value_list": {"name": putValueName,"image_list": {"url": putUrl,"name": putImageName}}}
         
-        fetch(`http://127.0.0.1:8000/update_item/${getId}`, {
+        fetch(`http://3.110.83.156:8000/update_item/${getId}`, {
             method: 'PUT',
             headers: {
                 'accept': 'application/json',

@@ -21,7 +21,7 @@ function Create(){
               }
             }
           }
-        fetch(`http://127.0.0.1:8000/items/`, {
+        fetch(`http://3.110.83.156:8000/items/`, {
             method: 'POST',
             headers: {
                 'accept': 'application/json',

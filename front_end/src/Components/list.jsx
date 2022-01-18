@@ -20,7 +20,7 @@ function CRUD(props) {
     var fetching;
     const [fetch_status,setFetch_status]=useState();
     const fetch_all=() =>{
-        fetching=fetch(`http://127.0.0.1:8000/get_items`,{
+        fetching=fetch(`http://3.110.83.156:8000/get_items`,{
             method:"GET",
             header:{'accept': 'application/json'}
         })

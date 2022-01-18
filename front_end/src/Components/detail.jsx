@@ -16,7 +16,7 @@ function Detail(){
         deleteItem();
     },[]);
 
-    fetch(`http://127.0.0.1:8000/get_item/${params.id}`, {
+    fetch(`http://3.110.83.156:8000/get_item/${params.id}`, {
             method:"GET",
             headers: {
                 'accept': 'application/json'
@@ -33,7 +33,7 @@ function Detail(){
             setputUrl(json.value_list.image_list.url)
         })
     function deleteItem(id){
-        fetch(`http://127.0.0.1:8000/delete_item/${id}`, {
+        fetch(`http://3.110.83.156:8000/delete_item/${id}`, {
             method: 'DELETE',
             headers: {
                 'accept': 'application/json'
